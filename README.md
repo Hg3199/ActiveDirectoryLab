@@ -1,6 +1,6 @@
 <h1>Active Directory Home Lab</h1>
 
- ### [YouTube Demonstration]()
+ ### []()
 
 <h2>Description</h2>
 In this lab we're going to walk through how to create an Active Directory home lab Environment using Oricale Virtual Box. Configuring and setting this up to simulate a corperate private network that has access to the internet through the domain controller which is also going to house active directory. Then we're going to run a powershell script to create 1000 users in our system that will be able to sign in to any of the workstations in our simulated domain.
@@ -48,10 +48,32 @@ Once the machine is created, we will launch it and download windows server 2019.
 
 <br />
 <br />
-Once we had identified the adapter used for the internal network, we assigned it an appropriate IP address and set the default gateway to the address of the domain controllers, which had been connected to the internet via the adapter running NAT. This enabled us to establish a secure connection between the internal network and the internet so that our users could easily access the resources they needed. 
+Once we had identified the adapter used for the internal network, we allocated it an appropriate IP address and set the default gateway to the address of the domain controllers, which had been connected to the internet via the adapter running NAT.This enabled us to establish a secure link between the internal network and the internet so that our users could readily access the resources they required. 
+<br />
+<br />
 
-19:44
+<b>Setting up IP addressing:</b>
+![ad5 jpg](https://user-images.githubusercontent.com/125488657/223807245-bd6cd333-e58f-4526-b48e-12c9d000e278.png)
+<br />
+<br />
+<br />
+Having successfully completed the IP addressing for the internal network adapter and default gateway, the next step in our process is to install Active Directory and create a domain. Once the installation has been completed, we will then proceed with our post deployment configuration, which will ultimately proceed with the creation of a new domain called "mydomain.com". This is a crucial step in establishing our infrastructure.
+<br />
+<br />
+<br />
 
+<b>Creating new domain:<b/>
+![ad7](https://user-images.githubusercontent.com/125488657/223815336-150d2d66-144e-4ab9-8a5c-6d47d3fbebad.jpg)
+<br />
+<br />
+<br />
+Once mydomain.com was created, an organizational unit was set up with a new user (domain admin) to manage the domain, secure users, maintain systems/software, and serve as a contact point/info source for users. This role is important to the domain's success.
+<br />
+<br />
+<br />
+
+<b>Creating new OU and user:<b/>
+![ad8](https://user-images.githubusercontent.com/125488657/223817096-205dccc1-f986-4b4c-9dfd-9ef1aaa5e97a.jpg)
 <!--
  ```diff
 - text in red
