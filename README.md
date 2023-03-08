@@ -50,7 +50,7 @@ Once the machine is created, we will launch it and download windows server 2019.
 <br />
 Once we had identified the adapter used for the internal network, we assigned it an appropriate IP address and set the default gateway to the address of the domain controllers, which had been connected to the internet via the adapter running NAT. This enabled us to establish a secure connection between the internal network and the internet so that our users could easily access the resources they needed. 
 
-
+19:44
 
 <!--
  ```diff
