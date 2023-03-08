@@ -74,6 +74,8 @@ Once mydomain.com was created, an organizational unit was set up with a new user
 
 <b>Creating new OU and user:<b/>
 ![ad8](https://user-images.githubusercontent.com/125488657/223817096-205dccc1-f986-4b4c-9dfd-9ef1aaa5e97a.jpg)
+
+22:53
 <!--
  ```diff
 - text in red
