@@ -17,8 +17,11 @@
 
 - <b>Windows server 2019</b> 
 - <b>Windows 10</b>
+<h2>Network Diagram</h2>
 
+![diagram](https://user-images.githubusercontent.com/125488657/224837901-1056303e-b4f5-4bc0-93df-76ea97f0ffe0.jpg)
 <h2>Project Walkthrough</h2>
+
 <br />
 <br />
 <b>The initial step of this project involves downloading two ISO files- one for Windows Server 2019 and the other for Windows 10. Following the download of both files, we must open the VirtualBox in order to spin up two virtual machines. The Domain controller is going to have 2 adapdters. One that will be set up to run NAT to connect to my home's wifi network and another for the internal network for the other clients to connect to. Once the construction of the two virtual machines is complete, we can continue the remainder of the project. It is important to note that a well-planned approach is necessary to ensure that the virtual machines are created accurately.</b>
