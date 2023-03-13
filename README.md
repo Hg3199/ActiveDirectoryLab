@@ -142,15 +142,74 @@ Once our scope has been established, we need to further configure some DHCP opti
 <br />
 <br />
 ![ad14](https://user-images.githubusercontent.com/125488657/224145266-5e14435c-fe81-4f53-908a-23082aa676cb.jpg)
+<br />
+<br />
+<br />
+Having already configured DHCP and Active Directory, the last step before adding client machines to the domain is to run a Powershell script found on GitHub. This script will automatically create and add 1000 users to our Active Directory Server using names.txt which was created by a random name generator, providing us with a userbase and a streamlined approach to user management. By running this script, we can ensure that our domain is ready to accept new client machines and is capable of optimizing user performance, creating a more functional network.
+<br />
+<br />
+<br />
 
-31:15
+<b>Names.txt:</b>
+<br />
+<br />
+<br />
+![ad15](https://user-images.githubusercontent.com/125488657/224791335-613b1f49-a2b9-4faa-9b6e-d43eabd10f43.jpg)
+<br />
+<br />
+<br />
 
+<b>Powershell Script:<b/>
+<br />
+<br />
+<br />
+![ad17](https://user-images.githubusercontent.com/125488657/224794305-5b8b15e8-52ff-40c3-931f-192b6693a2b3.jpg)
+<br />
+<br />
+<br />
+With the configuration of the domain controller now complete, we are nearing the end of our active directory lab. The only thing left to do is to create Windows10 client machines and add them to the domain, thus simulating what it would be like to add a new workstation to a company's network. When we spin up each client, all we have to do is switch the network adapter to the internal network with the same name as the internal network on the domain controller.
+<br />
+<br />
+<br />
+
+<b>Setting Up Client NIC:</b>
+<br />
+<br />
+<br />
+![ad18](https://user-images.githubusercontent.com/125488657/224806538-5fe8f54c-9f05-4943-8ba7-d2d2fba7f93a.jpg)
+<br />
+<br />
+<br />
+Our lab is now complete now that the client machine has been created and added to mydomain.com. We can now sign in as any one of the thousand users generated via the PowerShell script on any one of the client machines that are part of mydomain.com. To prove that our domain controller is running correctly, I will sign in as a random user on the list. Afterward, I will confirm that the default gateway matches the domain controller, which will end this project.
+<br />
+<br />
+<br />
+
+<b>Connected on Client Machine:</b>
+<br />
+<br />
+<br />
+![ad19](https://user-images.githubusercontent.com/125488657/224814056-cc699597-dfcf-4c31-9aa3-50a2e8f76833.jpg)
+<br />
+<br />
+<br />
+
+<b>Signed in as user w/ correct gateway:</b>
+<br />
+<br />
+<br />
+![ad20](https://user-images.githubusercontent.com/125488657/224814474-36c9b799-f4ea-4acb-a4b3-52cde7b3b813.jpg)
+
+<h2>Conclusion</h2>
+<br />
+<br />
+By constructing this lab, we were able to gain a deeper understanding of ActiveDirectory and its implications in a corporate environment. Additionally, we can now implement our newly acquired knowledge in network administration and the management of users and groups. We also had the opportunity to practice and develop our skills in creating and maintaining a functional network, which are valuable skills we can apply to real life scenarios as well as jobs that require these abilities.
 <!--
  ```diff
 - text in red
 + text in green
 ! text in orange
-# text in gray
+# text in gra.
 @@ text in purple (and bold)@@
 ```
 --!>
